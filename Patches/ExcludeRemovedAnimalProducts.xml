@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Exclude eggs and meat from removed animals from trader FoodRaw stock generators -->
+    
+    <!-- Add excludedThingDefs node for generators that don't have it -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='FoodRaw' and not(excludedThingDefs)]</xpath>
+        <value>
+            <excludedThingDefs />
+        </value>
+    </Operation>
+    
+    <!-- Add vanilla animal eggs to excludedThingDefs -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='FoodRaw']/excludedThingDefs</xpath>
+        <value>
+            <li>EggCassowaryFertilized</li>
+            <li>EggCassowaryUnfertilized</li>
+            <li>EggCobraFertilized</li>
+            <li>EggCobraUnfertilized</li>
+            <li>EggDuckFertilized</li>
+            <li>EggDuckUnfertilized</li>
+            <li>EggEmuFertilized</li>
+            <li>EggEmuUnfertilized</li>
+            <li>EggOstrichFertilized</li>
+            <li>EggOstrichUnfertilized</li>
+            <li>EggTortoiseFertilized</li>
+            <li>EggTortoiseUnfertilized</li>
+            <li>EggTurkeyFertilized</li>
+            <li>EggTurkeyUnfertilized</li>
+        </value>
+    </Operation>
+    
+    <!-- Add vanilla animal meats to excludedThingDefs -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='FoodRaw']/excludedThingDefs</xpath>
+        <value>
+            <li>Meat_Alpaca</li>
+            <li>Meat_Bison</li>
+            <li>Meat_Boomalope</li>
+            <li>Meat_Capybara</li>
+            <li>Meat_Caribou</li>
+            <li>Meat_Cassowary</li>
+            <li>Meat_Chinchilla</li>
+            <li>Meat_Dromedary</li>
+            <li>Meat_Duck</li>
+            <li>Meat_Elephant</li>
+            <li>Meat_Elk</li>
+            <li>Meat_GuineaPig</li>
+            <li>Meat_Hare</li>
+            <li>Meat_Horse</li>
+            <li>Meat_Ibex</li>
+            <li>Meat_Megasloth</li>
+            <li>Meat_Muffalo</li>
+            <li>Meat_Rhinoceros</li>
+            <li>Meat_Turkey</li>
+            <li>Meat_Yak</li>
+            <li>Meat_Boomrat</li>
+            <li>Meat_Bear_Grizzly</li>
+            <li>Meat_Cougar</li>
+            <li>Meat_Lynx</li>
+            <li>Meat_Panther</li>
+            <li>Meat_Cobra</li>
+            <li>Meat_Tortoise</li>
+            <li>Meat_Thrumbo</li>
+            <li>Meat_Alphabeaver</li>
+        </value>
+    </Operation>
+    
+    <!-- Biotech animals that produce meat -->
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='FoodRaw']/excludedThingDefs</xpath>
+        <value>
+            <li>Meat_Toxalope</li>
+        </value>
+    </Operation>
+    
+    <!-- Odyssey animals that lay eggs -->
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='FoodRaw']/excludedThingDefs</xpath>
+        <value>
+            <li>EggMonitorLizardFertilized</li>
+            <li>EggMonitorLizardUnfertilized</li>
+            <li>EggFlamingoFertilized</li>
+            <li>EggFlamingoUnfertilized</li>
+            <li>EggHeronFertilized</li>
+            <li>EggHeronUnfertilized</li>
+            <li>EggSwanFertilized</li>
+            <li>EggSwanUnfertilized</li>
+            <li>EggSparrowFertilized</li>
+            <li>EggSparrowUnfertilized</li>
+            <li>EggBluebirdFertilized</li>
+            <li>EggBluebirdUnfertilized</li>
+            <li>EggQuailFertilized</li>
+            <li>EggQuailUnfertilized</li>
+            <li>EggMacawFertilized</li>
+            <li>EggMacawUnfertilized</li>
+            <li>EggPeacockFertilized</li>
+            <li>EggPeacockUnfertilized</li>
+            <li>EggSeaTurtleFertilized</li>
+            <li>EggSeaTurtleUnfertilized</li>
+            <li>EggAlligatorFertilized</li>
+            <li>EggAlligatorUnfertilized</li>
+            <li>EggPenguinFertilized</li>
+            <li>EggPenguinUnfertilized</li>
+        </value>
+    </Operation>
+    
+    <!-- Odyssey animals that produce meat -->
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='FoodRaw']/excludedThingDefs</xpath>
+        <value>
+            <li>Meat_Hippo</li>
+            <li>Meat_LavaSnail</li>
+            <li>Meat_Mastodon</li>
+            <li>Meat_Moose</li>
+            <li>Meat_Muskox</li>
+            <li>Meat_Panda</li>
+            <li>Meat_Porcupine</li>
+            <li>Meat_MonitorLizard</li>
+            <li>Meat_Armadillo</li>
+            <li>Meat_Badger</li>
+            <li>Meat_Bullfrog</li>
+            <li>Meat_ColossusToad</li>
+            <li>Meat_Gorilla</li>
+            <li>Meat_Megavole</li>
+            <li>Meat_Mink</li>
+            <li>Meat_Otter</li>
+            <li>Meat_SeaTurtle</li>
+            <li>Meat_StoneCrab</li>
+            <li>Meat_Alligator</li>
+            <li>Meat_Cat_Scimitar</li>
+            <li>Meat_SeaLion</li>
+            <li>Meat_Seal</li>
+            <li>Meat_Tiger</li>
+            <li>Meat_Walrus</li>
+            <li>Meat_Wolverine</li>
+            <li>Meat_AlphaThrumbo</li>
+        </value>
+    </Operation>
+    
+</Patch>

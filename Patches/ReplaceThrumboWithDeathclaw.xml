@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Replace ThrumboPasses incident to spawn Deathclaw instead -->
+    
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/IncidentDef[defName="ThrumboPasses"]/workerClass</xpath>
+        <value>
+            <workerClass>FCP.Core.IncidentWorker_AnimalPasses</workerClass>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/IncidentDef[defName="ThrumboPasses"]</xpath>
+        <value>
+            <letterLabel>LetterLabelThrumboPasses</letterLabel>
+            <letterText>LetterThrumboPasses</letterText>
+            <modExtensions>
+                <li Class="FCP.Core.ModExtension_AnimalPassesConfig">
+                    <animalThing>FCP_Animal_Deathclaw</animalThing>
+                    <animalPawnKind>FCP_Animal_Deathclaw</animalPawnKind>
+                    <minCount>1</minCount>
+                    <maxRangeInclusive>2~4</maxRangeInclusive>
+                    <ticksToLeave>90000~150000</ticksToLeave>
+                    <ignoreTemperature>false</ignoreTemperature>
+                    <ignoreToxicFallout>true</ignoreToxicFallout>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+    
+</Patch>

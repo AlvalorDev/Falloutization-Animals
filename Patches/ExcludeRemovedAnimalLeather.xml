@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Exclude leather from removed animals from trader Textiles stock generators -->
+    
+    <!-- Add vanilla animal leathers to excludedThingDefs -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='Textiles']/excludedThingDefs</xpath>
+        <value>
+            <li>Leather_Camel</li>
+            <li>Leather_Chinchilla</li>
+            <li>Leather_Elephant</li>
+            <li>Leather_Rhinoceros</li>
+            <li>Leather_Bluefur</li>
+            <li>Leather_Heavy</li>
+            <li>Leather_Panthera</li>
+            <li>Leather_Thrumbo</li>
+        </value>
+    </Operation>
+    
+    <!-- Odyssey animals that produce unique leather -->
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='Textiles']/excludedThingDefs</xpath>
+        <value>
+            <li>Leather_Mastodon</li>
+            <li>Leather_Sealskin</li>
+            <li>Leather_Hippo</li>
+            <li>Leather_Armadillo</li>
+            <li>Leather_Mink</li>
+            <li>Leather_AlphaThrumbo</li>
+        </value>
+    </Operation>
+    
+    <!-- Remove stuff categories from excluded leathers to prevent them from being used in recipes -->
+    
+    <!-- Vanilla leathers -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Leather_Camel"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Leather_Chinchilla"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Leather_Elephant"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Leather_Rhinoceros"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Leather_Bluefur"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Leather_Heavy"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Leather_Panthera"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Leather_Thrumbo"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    
+    <!-- Odyssey leathers (only if Odyssey is enabled) -->
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/ThingDef[defName="Leather_Mastodon"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/ThingDef[defName="Leather_Sealskin"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/ThingDef[defName="Leather_Hippo"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/ThingDef[defName="Leather_Armadillo"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/ThingDef[defName="Leather_Mink"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/ThingDef[defName="Leather_AlphaThrumbo"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    
+</Patch>

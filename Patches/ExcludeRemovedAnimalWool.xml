@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Exclude wool from removed animals from trader Textiles stock generators -->
+       
+    <!-- Add vanilla animal wools to excludedThingDefs -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='Textiles']/excludedThingDefs</xpath>
+        <value>
+            <li>WoolAlpaca</li>
+            <li>WoolMegasloth</li>
+            <li>WoolMuffalo</li>
+            <li>WoolBison</li>
+        </value>
+    </Operation>
+    
+    <!-- Odyssey animals that produce wool (only if Odyssey is enabled) -->
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='Textiles']/excludedThingDefs</xpath>
+        <value>
+            <li>WoolMastodon</li>
+            <li>WoolMuskox</li>
+        </value>
+    </Operation>
+    
+    <!-- Remove stuff categories from excluded wools to prevent them from being used in recipes -->
+    
+    <!-- Vanilla wools -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WoolAlpaca"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WoolMegasloth"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WoolMuffalo"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="WoolBison"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    
+    <!-- Odyssey wools (only if Odyssey is enabled) -->
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/ThingDef[defName="WoolMastodon"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/ThingDef[defName="WoolMuskox"]/stuffProps</xpath>
+        <value>
+            <categories Inherit="False" />
+        </value>
+    </Operation>
+    
+</Patch>

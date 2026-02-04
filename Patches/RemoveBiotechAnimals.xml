@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Remove Toxalope from pollutionWildAnimals lists -->
+    
+    <Operation Class="PatchOperationRemove" MayRequire="Ludeon.RimWorld.Biotech">
+        <xpath>Defs/BiomeDef/pollutionWildAnimals/Toxalope</xpath>
+    </Operation>
+    
+</Patch>
