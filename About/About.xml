@@ -21,9 +21,7 @@
 		<li>Ludeon.RimWorld.Odyssey</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>Ludeon.RimWorld.Anomaly</li>
-    </loadAfter>
-    <loadBefore>
         <li>Rick.FCP.Animals</li>
-    </loadBefore>
+    </loadAfter>
     <modVersion>1.0</modVersion>
 </ModMetaData>
