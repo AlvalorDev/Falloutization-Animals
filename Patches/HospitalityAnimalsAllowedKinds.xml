@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch MayRequire="Ludeon.RimWorld.Royalty">
+  <!-- Restrict Hospitality_Animals to Fallout animals -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/QuestScriptDef[defName="Hospitality_Animals"]/root/nodes/li[@Class="QuestNode_GetPawnKind"]/options</xpath>
+    <value>
+      <options>
+        <li><kindDef>Cat</kindDef><weight>1</weight></li>
+        <li><kindDef>Chicken</kindDef><weight>1</weight></li>
+        <li><kindDef>Cow</kindDef><weight>1</weight></li>
+        <li><kindDef>Deer</kindDef><weight>1</weight></li>
+        <li><kindDef>Donkey</kindDef><weight>1</weight></li>
+        <li><kindDef>Fox_Arctic</kindDef><weight>1</weight></li>
+        <li><kindDef>Fox_Fennec</kindDef><weight>1</weight></li>
+        <li><kindDef>Fox_Red</kindDef><weight>1</weight></li>
+        <li><kindDef>Gazelle</kindDef><weight>1</weight></li>
+        <li><kindDef>Goat</kindDef><weight>1</weight></li>
+        <li><kindDef>Goose</kindDef><weight>1</weight></li>
+        <li><kindDef>Husky</kindDef><weight>1</weight></li>
+        <li><kindDef>Iguana</kindDef><weight>1</weight></li>
+        <li><kindDef>LabradorRetriever</kindDef><weight>1</weight></li>
+        <li><kindDef>Pig</kindDef><weight>1</weight></li>
+        <li><kindDef>Rat</kindDef><weight>1</weight></li>
+        <li><kindDef>Sheep</kindDef><weight>1</weight></li>
+        <li><kindDef>Squirrel</kindDef><weight>1</weight></li>
+        <li><kindDef>Warg</kindDef><weight>1</weight></li>
+        <li><kindDef>Wolf_Arctic</kindDef><weight>1</weight></li>
+        <li><kindDef>Wolf_Timber</kindDef><weight>1</weight></li>
+        <li><kindDef>YorkshireTerrier</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Beachlurk</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Bighorner</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Fire_Gecko</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Gecko</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_German_Shepherd_Dog</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Giant_Mantis</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Glowing_Radroach</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Glowing_Radstag</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Golden_Gecko</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Green_Gecko</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Lakelurk</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Mirelurk</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Molerat</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Pale_Radstag</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Rad_Chicken</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Rad_Rabbit</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Rad_Raven</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Radgull</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Radroach</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Radstag</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Riverlurk</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Thrasher</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Vicious_Dog</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Vicious_Guard_Dog</kindDef><weight>1</weight></li>
+        <li><kindDef>FCP_Animal_Yao_Guai</kindDef><weight>1</weight></li>
+      </options>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+    <xpath>Defs/QuestScriptDef[defName="Hospitality_Animals"]/root/nodes/li[@Class="QuestNode_GetPawnKind"]/options</xpath>
+    <value>
+      <li><kindDef>WasteRat</kindDef><weight>1</weight></li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Odyssey">
+    <xpath>Defs/QuestScriptDef[defName="Hospitality_Animals"]/root/nodes/li[@Class="QuestNode_GetPawnKind"]/options</xpath>
+    <value>
+      <li><kindDef>AlphaThrumbo</kindDef><weight>1</weight></li>
+      <li><kindDef>BogHound</kindDef><weight>1</weight></li>
+      <li><kindDef>Crow</kindDef><weight>1</weight></li>
+      <li><kindDef>PrairieDog</kindDef><weight>1</weight></li>
+      <li><kindDef>Vulture</kindDef><weight>1</weight></li>
+      <li><kindDef>Wolf_Great</kindDef><weight>1</weight></li>
+    </value>
+  </Operation>
+</Patch>
