@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Add vanilla AnimalFarm tag to Brahmin so they can appear in Farm animals wander in and in animal trader stock. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FCP_Animal_Brahmin"]/tradeTags</xpath>
+    <value>
+      <li>AnimalFarm</li>
+    </value>
+  </Operation>
+</Patch>
