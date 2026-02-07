@@ -109,7 +109,13 @@
     </Operation>
     
     <!-- Remove tradeTags to prevent animals from appearing in trader caravans -->
-    
+    <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
+        <xpath>Defs/ThingDef[defName="Gorilla"]/tradeTags</xpath>
+        <value>
+            <tradeTags Inherit="False" />
+        </value>
+    </Operation>
+
     <Operation Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Odyssey">
         <xpath>Defs/ThingDef[defName="Porcupine"]/tradeTags</xpath>
         <value>

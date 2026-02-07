@@ -118,7 +118,126 @@
     </Operation>
     
     <!-- Remove tradeTags to prevent animals from appearing in trader caravans -->
-    
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Alpaca"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bison"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Boomalope"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Boomrat"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Capybara"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Caribou"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Cassowary"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Chinchilla"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Dromedary"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Duck"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Elephant"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Elk"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Emu"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="GuineaPig"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Horse"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ibex"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Megasloth"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Monkey"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Muffalo"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ostrich"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Raccoon"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Rhinoceros"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Turkey"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Yak"]/tradeTags</xpath>
+        <value><tradeTags Inherit="False" /></value>
+    </Operation>
+
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Hare"]</xpath>
         <value>
