@@ -68,7 +68,7 @@
     </Operation>
     
     <!-- Biotech animals that produce meat -->
-    <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+    <Operation Class="PatchOperationAdd">
         <xpath>Defs/TraderKindDef/stockGenerators/li[@Class='StockGenerator_Category' and categoryDef='FoodRaw']/excludedThingDefs</xpath>
         <value>
             <li>Meat_Toxalope</li>

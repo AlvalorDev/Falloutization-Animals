@@ -55,7 +55,7 @@
       </options>
     </value>
   </Operation>
-  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+  <Operation Class="PatchOperationAdd">
     <xpath>Defs/QuestScriptDef[defName="Hospitality_Animals"]/root/nodes/li[@Class="QuestNode_GetPawnKind"]/options</xpath>
     <value>
       <li><kindDef>WasteRat</kindDef><weight>1</weight></li>

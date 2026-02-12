@@ -141,7 +141,7 @@
   </Operation>
 
   <!-- Biotech disabled animals -->
-  <Operation Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Biotech">
+  <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Toxalope"]/race</xpath>
     <value><neverIncludeInQuests>true</neverIncludeInQuests></value>
   </Operation>
